@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"></meta>
+	<!-- el meta para moviles -->
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<title>Ejemplo Grids</title>
+	<!-- bootstrap agrega ed por si normalize y estilos de por si -->
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="grid.css">
+</head>
+<body>
+	<h3>Ejemplo de visualizacion</h3>
+	<h4 class="visible-lg">Desktop Large (LG)</h4>
+	<h4 class="visible-md">Destop Medium (MD)</h4>
+	<h4 class="visible-sm">Tablets (SM)</h4>
+	<h4 class="visible-xs">Phones (XS)</h4>
+	<div  class="contenedor row">
+	<!-- el sm xs son medidas para que cambie la manera de comportarse cuando llegue a cierto tamaño la pantalla -->
+
+	<!-- en totakl son 12 columnas, las 12 la dividimos en 3, muestra cuatro columnas (para lg). -->
+		<div class="col col-lg-3 col-sm-6">Columna 1</div>
+		<div class="col col-lg-3 col-sm-6">Columna 2</div>
+		<div class="col col-lg-3 col-sm-6">Columna 3</div>
+		<div class="col col-lg-3 col-sm-6">Columna 4</div>
+	</div>
+	
+	<div class="contenedor row">
+		<div class="col col-xs-12">
+			Esta columna siempre ocupa 12.
+			<div class="row contenedor">
+				<div class="col col-xs-6">Una Columna</div>
+				<div class="col col-xs-6">Una Columna</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
